@@ -66,9 +66,15 @@
   .hero__sub{font-size:clamp(1.05rem,1.6vw,1.28rem);color:rgba(255,255,255,.86);max-width:52ch;line-height:1.55;margin:0 auto 2.2rem;}
   .hero__cta{display:flex;flex-wrap:wrap;gap:.9rem;align-items:center;justify-content:center;}
 
-  .btn{font-family:var(--body);font-weight:600;font-size:.95rem;padding:.9em 1.5em;border-radius:2px;cursor:pointer;border:1.5px solid transparent;display:inline-flex;align-items:center;gap:.5em;transition:.2s ease;}
+  .btn{position:relative;isolation:isolate;overflow:hidden;font-family:var(--body);font-weight:600;font-size:.95rem;padding:.9em 1.5em;border-radius:2px;cursor:pointer;border:1.5px solid transparent;display:inline-flex;align-items:center;gap:.5em;transition:border-color .3s ease, color .3s ease;}
   .btn--ghost{background:rgba(255,255,255,.06);color:#fff;border-color:rgba(255,255,255,.5);}
-  .btn--ghost:hover{background:var(--blue);border-color:var(--blue);color:#fff;font-weight:700;}
+  /* Split Half fill — two panels slide in from both edges and meet in the middle */
+  .btn--ghost::before,.btn--ghost::after{content:"";position:absolute;z-index:-1;background:var(--blue);transition:transform .4s cubic-bezier(.22,1,.36,1);}
+  .btn--ghost::before{inset:0 50% 0 0;transform:translateX(-100%);}
+  .btn--ghost::after{inset:0 0 0 50%;transform:translateX(100%);}
+  .btn--ghost:hover::before,.btn--ghost:hover::after,
+  .btn--ghost:focus-visible::before,.btn--ghost:focus-visible::after{transform:translateX(0);}
+  .btn--ghost:hover,.btn--ghost:focus-visible{border-color:rgba(255,255,255,.85);color:#fff;}
   .btn--solid{background:var(--blue);color:#fff;} .btn--solid:hover{background:var(--blue-700);}
 
   /* sections */
@@ -170,6 +176,7 @@
   @media (prefers-reduced-motion:reduce){
     html{scroll-behavior:auto;}
     .reveal{opacity:1;transform:none;transition:none;}
+    .btn,.btn--ghost::before,.btn--ghost::after{transition:none;}
   }
 </style>
 </head>
@@ -209,7 +216,7 @@
         <a href="#team" data-i18n="nav.researchers">Researchers</a>
       </nav>
       <div class="lang-switch" role="group" aria-label="Language / Tungumál / Język">
-        <button type="button" class="lang-btn" data-lang="en" aria-label="English">EN</button>
+        <button type="button" class="lang-btn" data-lang="en" aria-label="English"><svg viewBox="0 0 60 30" aria-hidden="true"><clipPath id="ukS"><path d="M0,0 v30 h60 v-30 z"/></clipPath><clipPath id="ukT"><path d="M30,15 h30 v15 z v15 h-30 z h-30 v-15 z v-15 h30 z"/></clipPath><g clip-path="url(#ukS)"><path d="M0,0 v30 h60 v-30 z" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 L60,30 M60,0 L0,30" clip-path="url(#ukT)" stroke="#C8102E" stroke-width="4"/><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/></g></svg></button>
         <button type="button" class="lang-btn" data-lang="is" aria-label="Íslenska"><svg viewBox="0 0 25 18" aria-hidden="true"><rect width="25" height="18" fill="#02529C"/><rect x="7" width="4" height="18" fill="#fff"/><rect y="7" width="25" height="4" fill="#fff"/><rect x="8" width="2" height="18" fill="#DC1E35"/><rect y="8" width="25" height="2" fill="#DC1E35"/></svg></button>
         <button type="button" class="lang-btn" data-lang="pl" aria-label="Polski"><svg viewBox="0 0 25 16" aria-hidden="true"><rect width="25" height="16" fill="#fff"/><rect y="8" width="25" height="8" fill="#DC143C"/></svg></button>
       </div>
