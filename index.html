@@ -140,11 +140,14 @@
   .researcher__org{font-size:.92rem;color:var(--ink-2);margin-top:.35rem;}
   .researcher__mail{display:inline-block;margin-top:.55rem;font-size:.9rem;color:var(--blue);font-weight:500;word-break:break-all;}
   .researcher__mail:hover{text-decoration:underline;}
+  .uni-badge{position:absolute;top:8px;right:8px;z-index:2;width:36px;height:36px;border-radius:7px;overflow:hidden;box-shadow:0 2px 7px rgba(12,11,30,.3);}
+  .uni-badge img{width:100%;height:100%;object-fit:cover;display:block;}
+  .uni-badge--ph{display:flex;align-items:center;justify-content:center;background:var(--ink-2);color:#fff;font-family:var(--mono);font-size:.55rem;font-weight:600;letter-spacing:.02em;}
 
   /* footer */
   .site-footer{background:var(--blue);color:#fff;}
   .footer-inner{padding-block:clamp(3rem,6vw,4.5rem);}
-  .footer-top{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:2.5rem;padding-bottom:2.5rem;border-bottom:1px solid rgba(255,255,255,.18);}
+  .footer-top{display:grid;grid-template-columns:1.6fr 1fr;gap:2.5rem;padding-bottom:2.5rem;border-bottom:1px solid rgba(255,255,255,.18);}
   .footer .logo,.site-footer .logo{margin-bottom:1.2rem;}
   .footer__tag{color:rgba(255,255,255,.78);max-width:34ch;font-size:.98rem;}
   .site-footer h4{font-family:var(--mono);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.6);margin:0 0 1rem;font-weight:500;}
@@ -307,7 +310,6 @@
     </div>
     <div class="reveal">
       <p class="ph-lead" data-i18n="pubs.lead">Peer-reviewed articles, working papers, datasets, and conference presentations produced by the project will be listed here as they are published. Each entry will link to the full text or DOI.</p>
-      <span class="ph-note" data-i18n="pubs.note">Publications will be added as they become available.</span>
       <div class="pub-list">
         <article class="pub"><div class="pub__year" data-i18n="pubs.year">[Year]</div><div>
           <h3 class="pub__title" data-i18n="pubs.title">[Publication title goes here]</h3>
@@ -353,62 +355,62 @@
     </div>
     <div class="team-grid reveal">
       <div class="researcher">
-        <div class="researcher__photo"><div class="researcher__ph">AMW</div></div>
+        <div class="researcher__photo"><img src="images/anna.jpg" alt="Anna Maria Wojtynska"><div class="researcher__ph">AMW</div><span class="uni-badge"><img src="images/favicon.png" alt="Háskóli Íslands"></span></div>
         <div class="researcher__name">Anna Maria Wojtynska</div>
         <div class="researcher__role" data-i18n="team.r4role">Assistant Professor · Faculty of Sociology, Anthropology &amp; Folkloristics</div>
         <div class="researcher__org" data-i18n="team.r4org">University of Iceland</div>
         <a class="researcher__mail" href="mailto:wojtynska@hi.is">wojtynska@hi.is</a>
       </div>
       <div class="researcher">
-        <div class="researcher__photo"><img src="images/gudrun.jpg" alt="Guðrún Sif Friðriksdóttir"><div class="researcher__ph">GSF</div></div>
+        <div class="researcher__photo"><img src="images/gudrun.jpg" alt="Guðrún Sif Friðriksdóttir"><div class="researcher__ph">GSF</div><span class="uni-badge"><img src="images/favicon.png" alt="Háskóli Íslands"></span></div>
         <div class="researcher__name">Guðrún Sif Friðriksdóttir</div>
         <div class="researcher__role" data-i18n="team.r1role">Researcher · School of Social Sciences</div>
         <div class="researcher__org" data-i18n="team.r1org">University of Iceland</div>
         <a class="researcher__mail" href="mailto:gsf@hi.is">gsf@hi.is</a>
       </div>
       <div class="researcher">
-        <div class="researcher__photo"><div class="researcher__ph">KL</div></div>
+        <div class="researcher__photo"><img src="images/kristin.jpg" alt="Kristín Loftsdóttir"><div class="researcher__ph">KL</div><span class="uni-badge"><img src="images/favicon.png" alt="Háskóli Íslands"></span></div>
         <div class="researcher__name">Kristín Loftsdóttir</div>
         <div class="researcher__role" data-i18n="team.r5role">Professor · Faculty of Sociology, Anthropology &amp; Folkloristics</div>
         <div class="researcher__org" data-i18n="team.r5org">University of Iceland</div>
         <a class="researcher__mail" href="mailto:kristinl@hi.is">kristinl@hi.is</a>
       </div>
       <div class="researcher">
-        <div class="researcher__photo"><div class="researcher__ph">MP</div></div>
+        <div class="researcher__photo"><img src="images/marek.jpg" alt="Marek Pawlak"><div class="researcher__ph">MP</div><span class="uni-badge"><img src="images/uni-jagiellonian.png" alt="Jagiellonian University"></span></div>
         <div class="researcher__name">Marek Pawlak</div>
         <div class="researcher__org" data-i18n="team.r6org">Jagiellonian University</div>
         <a class="researcher__mail" href="mailto:marek.pawlak@uj.edu.pl">marek.pawlak@uj.edu.pl</a>
       </div>
       <div class="researcher">
-        <div class="researcher__photo"><img src="images/mar.jpg" alt="Már Wolfgang Mixa"><div class="researcher__ph">MWM</div></div>
+        <div class="researcher__photo"><img src="images/mar.jpg" alt="Már Wolfgang Mixa"><div class="researcher__ph">MWM</div><span class="uni-badge"><img src="images/favicon.png" alt="Háskóli Íslands"></span></div>
         <div class="researcher__name">Már Wolfgang Mixa</div>
         <div class="researcher__role" data-i18n="team.r7role">Professor · Faculty of Business Administration</div>
         <div class="researcher__org" data-i18n="team.r7org">University of Iceland</div>
         <a class="researcher__mail" href="mailto:mwm@hi.is">mwm@hi.is</a>
       </div>
       <div class="researcher">
-        <div class="researcher__photo"><img src="images/piotr.jpg" alt="Piotr Kowzan"><div class="researcher__ph">PK</div></div>
+        <div class="researcher__photo"><img src="images/piotr.jpg" alt="Piotr Kowzan"><div class="researcher__ph">PK</div><span class="uni-badge"><img src="images/uni-gdansk.png" alt="University of Gdańsk"></span></div>
         <div class="researcher__name">Piotr Kowzan, PhD</div>
         <div class="researcher__role" data-i18n="team.r2role">Assistant Professor · Institute of Education</div>
         <div class="researcher__org" data-i18n="team.r2org">University of Gdańsk</div>
         <a class="researcher__mail" href="mailto:piotr.kowzan@ug.edu.pl">piotr.kowzan@ug.edu.pl</a>
       </div>
       <div class="researcher">
-        <div class="researcher__photo"><img src="images/styrmir.jpg" alt="Styrmir Þór Hauksson"><div class="researcher__ph">SÞH</div></div>
+        <div class="researcher__photo"><img src="images/styrmir.jpg" alt="Styrmir Þór Hauksson"><div class="researcher__ph">SÞH</div><span class="uni-badge"><img src="images/favicon.png" alt="Háskóli Íslands"></span></div>
         <div class="researcher__name">Styrmir Þór Hauksson</div>
         <div class="researcher__role" data-i18n="team.r8role">Web designer · Student</div>
         <div class="researcher__org" data-i18n="team.r8org">University of Iceland</div>
         <a class="researcher__mail" href="mailto:Styrmir2014@gmail.com">Styrmir2014@gmail.com</a>
       </div>
       <div class="researcher">
-        <div class="researcher__photo"><img src="images/sylwester.jpg" alt="Sylwester Białowąs"><div class="researcher__ph">SB</div></div>
+        <div class="researcher__photo"><img src="images/sylwester.jpg" alt="Sylwester Białowąs"><div class="researcher__ph">SB</div><span class="uni-badge"><img src="images/uni-poznan.png" alt="Poznań University of Economics and Business"></span></div>
         <div class="researcher__name">Sylwester Białowąs</div>
         <div class="researcher__role" data-i18n="team.r3role">Professor · Head of Market &amp; Service Research</div>
         <div class="researcher__org" data-i18n="team.r3org">Poznań University of Economics and Business</div>
         <a class="researcher__mail" href="mailto:Sylwester.Bialowas@ue.poznan.pl">Sylwester.Bialowas@ue.poznan.pl</a>
       </div>
       <div class="researcher">
-        <div class="researcher__photo"><img src="images/unnur.jpg" alt="Unnur Dís Skaptadóttir"><div class="researcher__ph">UDS</div></div>
+        <div class="researcher__photo"><img src="images/unnur.jpg" alt="Unnur Dís Skaptadóttir"><div class="researcher__ph">UDS</div><span class="uni-badge"><img src="images/favicon.png" alt="Háskóli Íslands"></span></div>
         <div class="researcher__name">Unnur Dís Skaptadóttir</div>
         <div class="researcher__role" data-i18n="team.r9role">Professor · Faculty of Sociology, Anthropology &amp; Folkloristics</div>
         <div class="researcher__org" data-i18n="team.r9org">University of Iceland</div>
@@ -443,13 +445,6 @@
           <li><a href="#figures" data-i18n="nav.figures">Figures</a></li>
           <li><a href="#publications" data-i18n="nav.publications">Publications</a></li>
           <li><a href="#team" data-i18n="nav.researchers">Researchers</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4 data-i18n="footer.contacth">Contact</h4>
-        <ul>
-          <li><a href="mailto:name@hi.is">name@hi.is</a></li>
-          <li><a href="https://www.hi.is/" target="_blank" rel="noopener">hi.is</a></li>
         </ul>
       </div>
     </div>
