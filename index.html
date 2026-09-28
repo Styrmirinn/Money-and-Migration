@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Money and Migration — University of Iceland</title>
+<title>Money and Migration - University of Iceland</title>
 <meta name="description" content="A University of Iceland research project on money, savings and mobility between Poland and Iceland." />
 <link rel="icon" type="image/png" href="images/favicon.png" />
 <link rel="apple-touch-icon" href="images/favicon.png" />
@@ -68,7 +68,7 @@
 
   .btn{position:relative;isolation:isolate;overflow:hidden;font-family:var(--body);font-weight:600;font-size:.95rem;padding:.9em 1.5em;border-radius:2px;cursor:pointer;border:1.5px solid transparent;display:inline-flex;align-items:center;gap:.5em;transition:border-color .3s ease, color .3s ease;}
   .btn--ghost{background:rgba(255,255,255,.06);color:#fff;border-color:rgba(255,255,255,.5);}
-  /* Split Half fill — two panels slide in from both edges and meet in the middle */
+  /* Split Half fill - two panels slide in from both edges and meet in the middle */
   .btn--ghost::before,.btn--ghost::after{content:"";position:absolute;z-index:-1;background:var(--blue);transition:transform .4s cubic-bezier(.22,1,.36,1);}
   .btn--ghost::before{inset:0 50% 0 0;transform:translateX(-100%);}
   .btn--ghost::after{inset:0 0 0 50%;transform:translateX(100%);}
@@ -85,9 +85,12 @@
   .section-head h2{font-family:var(--display);font-size:clamp(1.7rem,3.4vw,2.6rem);margin-top:0;line-height:1.1;max-width:22ch;}
   .section-head--eb h2{margin-top:1rem;}
 
-  /* about — big text */
+  /* about - big text */
   .about__lead{font-family:var(--display);font-weight:400;font-size:clamp(1.7rem,3.8vw,3rem);line-height:1.22;letter-spacing:-0.015em;max-width:20ch;margin-bottom:2.2rem;}
   .about__lead em{font-style:italic;color:var(--blue);}
+  .about__questions{list-style:decimal;margin:.9rem 0 0;padding-left:1.3em;display:flex;flex-direction:column;gap:.5rem;max-width:44ch;}
+  .about__questions li{font-size:clamp(1.1rem,2.1vw,1.45rem);line-height:1.35;}
+  .about__questions li::marker{color:var(--blue);font-family:var(--mono);font-size:.9em;}
   .about__cols{display:grid;grid-template-columns:1fr 1fr;gap:clamp(1.6rem,4vw,3.5rem);max-width:none;}
   .about__cols p{font-size:1.12rem;color:var(--ink-2);}
   .about__cols p + p{margin-top:1.1rem;}
@@ -216,12 +219,11 @@
 
 <header class="site-header" id="top">
   <div class="header-inner">
-    <a href="#hero" class="logo" aria-label="University of Iceland — Money and Migration"><svg role="img"><use href="#hi-logo"/></svg></a>
+    <a href="#hero" class="logo" aria-label="University of Iceland - Money and Migration"><svg role="img" width="895" height="458"><use href="#hi-logo"/></svg></a>
     <div class="header-right">
       <nav class="nav" id="nav">
         <a href="#about" data-i18n="nav.about">About</a>
         <a href="#research" data-i18n="nav.research">Research</a>
-        <a href="#figures" data-i18n="nav.figures">Figures</a>
         <a href="#publications" data-i18n="nav.publications">Publications</a>
         <a href="#news" data-i18n="nav.news">News</a>
         <a href="#team" data-i18n="nav.researchers">Researchers</a>
@@ -251,9 +253,9 @@
 
 <section class="band band--paper" id="about">
   <div class="wrap reveal">
-    <p class="about__lead" data-i18n="about.lead">The project asks a single question: <em>how do migration experiences shape the way people perceive and manage money?</em></p>
+    <div class="about__lead" data-i18n="about.lead">The project focuses on two core questions:<ol class="about__questions"><li>What are the key factors shaping perceptions and practices of money?</li><li>How do migration experiences influence perceptions and practices regarding money?</li></ol></div>
     <div class="about__cols">
-      <p data-i18n="about.p1">To answer it, the project examines attitudes toward money among the general populations of Iceland and Poland, Polish migrants living in Iceland, and second-generation Poles raised in Iceland. Comparing these groups makes it possible to trace how the meaning attached to money changes through migration.</p>
+      <p data-i18n="about.p1">To answer these questions, the project examines attitudes toward money among the general populations of Iceland and Poland, Polish migrants living in Iceland, and second-generation Poles raised in Iceland. Comparing these groups makes it possible to trace how the meaning attached to money changes through migration.</p>
       <p data-i18n="about.p2">Combining quantitative surveys with qualitative interviews, a team of economists and anthropologists in both countries examines how money is embedded in social life: in families, savings and remittances, expectations and obligations. The aim is to understand not only how much people save, but also what money means to them and how that meaning changes as people, goods, ideas, and financial services move across borders.</p>
     </div>
     <div class="about__meta">
@@ -268,36 +270,20 @@
 <section class="band band--white" id="research">
   <div class="wrap">
     <div class="section-head reveal">
-      <h2 data-i18n="research.h2">The same question across the migration experience</h2>
+      <h2 data-i18n="research.h2">Exploring money across the migration experience</h2>
     </div>
     <div class="strands reveal">
       <article class="strand"><div class="strand__idx">01</div><div>
-        <h3 class="strand__title" data-i18n="research.s1t">The general population</h3>
-        <p class="strand__desc" data-i18n="research.s1d">Baseline attitudes toward money, saving, and financial security in Icelandic and Polish societies — the reference point against which the other two groups are compared.</p>
-        <span class="strand__tag" data-i18n="research.s1g">Iceland and Poland</span></div></article>
+        <h3 class="strand__title" data-i18n="research.s1t">Iceland and Poland</h3>
+        <p class="strand__desc" data-i18n="research.s1d">Baseline attitudes toward money, saving, and financial security in Icelandic and Polish societies - the reference point against which the other two groups are compared.</p></div></article>
       <article class="strand"><div class="strand__idx">02</div><div>
         <h3 class="strand__title" data-i18n="research.s2t">Polish migrants in Iceland</h3>
         <p class="strand__desc" data-i18n="research.s2d">How the meaning of money and the way it is managed change for people who have moved from Poland to Iceland and navigate two financial cultures at once.</p>
         <span class="strand__tag" data-i18n="research.s2g">First generation</span></div></article>
       <article class="strand"><div class="strand__idx">03</div><div>
         <h3 class="strand__title" data-i18n="research.s3t">Second-generation Poles</h3>
-        <p class="strand__desc" data-i18n="research.s3d">How second-generation Poles raised in Iceland understand, value, and talk about money — and which attitudes are carried forward from their parents.</p>
+        <p class="strand__desc" data-i18n="research.s3d">How second-generation Poles raised in Iceland understand, value, and talk about money - and which attitudes are carried forward from their parents.</p>
         <span class="strand__tag" data-i18n="research.s3g">Second generation</span></div></article>
-    </div>
-  </div>
-</section>
-
-<section class="band band--paper" id="figures">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <h2 data-i18n="figures.h2">Scope of the fieldwork</h2>
-    </div>
-    <span class="ph-note reveal" data-i18n="figures.note">Figures will be updated as fieldwork data become available.</span>
-    <div class="stats reveal">
-      <div class="stat"><div class="stat__num">00<small>+</small></div><div class="stat__label" data-i18n="figures.l1">Survey respondents</div></div>
-      <div class="stat"><div class="stat__num">00</div><div class="stat__label" data-i18n="figures.l2">In-depth interviews</div></div>
-      <div class="stat"><div class="stat__num">4</div><div class="stat__label" data-i18n="figures.l3">Universities involved</div></div>
-      <div class="stat"><div class="stat__num">00</div><div class="stat__label" data-i18n="figures.l4">Months of fieldwork</div></div>
     </div>
   </div>
 </section>
@@ -362,6 +348,13 @@
         <a class="researcher__mail" href="mailto:wojtynska@hi.is">wojtynska@hi.is</a>
       </div>
       <div class="researcher">
+        <div class="researcher__photo"><img src="images/mar.jpg" alt="Már Wolfgang Mixa"><div class="researcher__ph">MWM</div><span class="uni-badge"><img src="images/favicon.png" alt="Háskóli Íslands"></span></div>
+        <div class="researcher__name">Már Wolfgang Mixa</div>
+        <div class="researcher__role" data-i18n="team.r7role">Professor · Faculty of Business Administration</div>
+        <div class="researcher__org" data-i18n="team.r7org">University of Iceland</div>
+        <a class="researcher__mail" href="mailto:mwm@hi.is">mwm@hi.is</a>
+      </div>
+      <div class="researcher">
         <div class="researcher__photo"><img src="images/gudrun.jpg" alt="Guðrún Sif Friðriksdóttir"><div class="researcher__ph">GSF</div><span class="uni-badge"><img src="images/favicon.png" alt="Háskóli Íslands"></span></div>
         <div class="researcher__name">Guðrún Sif Friðriksdóttir</div>
         <div class="researcher__role" data-i18n="team.r1role">Researcher · School of Social Sciences</div>
@@ -374,33 +367,6 @@
         <div class="researcher__role" data-i18n="team.r5role">Professor · Faculty of Sociology, Anthropology &amp; Folkloristics</div>
         <div class="researcher__org" data-i18n="team.r5org">University of Iceland</div>
         <a class="researcher__mail" href="mailto:kristinl@hi.is">kristinl@hi.is</a>
-      </div>
-      <div class="researcher">
-        <div class="researcher__photo"><img src="images/marek.jpg" alt="Marek Pawlak"><div class="researcher__ph">MP</div><span class="uni-badge"><img src="images/uni-jagiellonian.png" alt="Jagiellonian University"></span></div>
-        <div class="researcher__name">Marek Pawlak</div>
-        <div class="researcher__org" data-i18n="team.r6org">Jagiellonian University</div>
-        <a class="researcher__mail" href="mailto:marek.pawlak@uj.edu.pl">marek.pawlak@uj.edu.pl</a>
-      </div>
-      <div class="researcher">
-        <div class="researcher__photo"><img src="images/mar.jpg" alt="Már Wolfgang Mixa"><div class="researcher__ph">MWM</div><span class="uni-badge"><img src="images/favicon.png" alt="Háskóli Íslands"></span></div>
-        <div class="researcher__name">Már Wolfgang Mixa</div>
-        <div class="researcher__role" data-i18n="team.r7role">Professor · Faculty of Business Administration</div>
-        <div class="researcher__org" data-i18n="team.r7org">University of Iceland</div>
-        <a class="researcher__mail" href="mailto:mwm@hi.is">mwm@hi.is</a>
-      </div>
-      <div class="researcher">
-        <div class="researcher__photo"><img src="images/piotr.jpg" alt="Piotr Kowzan"><div class="researcher__ph">PK</div><span class="uni-badge"><img src="images/uni-gdansk.png" alt="University of Gdańsk"></span></div>
-        <div class="researcher__name">Piotr Kowzan, PhD</div>
-        <div class="researcher__role" data-i18n="team.r2role">Assistant Professor · Institute of Education</div>
-        <div class="researcher__org" data-i18n="team.r2org">University of Gdańsk</div>
-        <a class="researcher__mail" href="mailto:piotr.kowzan@ug.edu.pl">piotr.kowzan@ug.edu.pl</a>
-      </div>
-      <div class="researcher">
-        <div class="researcher__photo"><img src="images/styrmir.jpg" alt="Styrmir Þór Hauksson"><div class="researcher__ph">SÞH</div><span class="uni-badge"><img src="images/favicon.png" alt="Háskóli Íslands"></span></div>
-        <div class="researcher__name">Styrmir Þór Hauksson</div>
-        <div class="researcher__role" data-i18n="team.r8role">Web designer · Student</div>
-        <div class="researcher__org" data-i18n="team.r8org">University of Iceland</div>
-        <a class="researcher__mail" href="mailto:Styrmir2014@gmail.com">Styrmir2014@gmail.com</a>
       </div>
       <div class="researcher">
         <div class="researcher__photo"><img src="images/sylwester.jpg" alt="Sylwester Białowąs"><div class="researcher__ph">SB</div><span class="uni-badge"><img src="images/uni-poznan.png" alt="Poznań University of Economics and Business"></span></div>
@@ -416,13 +382,33 @@
         <div class="researcher__org" data-i18n="team.r9org">University of Iceland</div>
         <a class="researcher__mail" href="mailto:unnurd@hi.is">unnurd@hi.is</a>
       </div>
+      <div class="researcher">
+        <div class="researcher__photo"><img src="images/styrmir.jpg" alt="Styrmir Þór Hauksson"><div class="researcher__ph">SÞH</div><span class="uni-badge"><img src="images/favicon.png" alt="Háskóli Íslands"></span></div>
+        <div class="researcher__name">Styrmir Þór Hauksson</div>
+        <div class="researcher__role" data-i18n="team.r8role">Web designer · Student</div>
+        <div class="researcher__org" data-i18n="team.r8org">University of Iceland</div>
+        <a class="researcher__mail" href="mailto:Styrmir2014@gmail.com">Styrmir2014@gmail.com</a>
+      </div>
+      <div class="researcher">
+        <div class="researcher__photo"><img src="images/piotr.jpg" alt="Piotr Kowzan"><div class="researcher__ph">PK</div><span class="uni-badge"><img src="images/uni-gdansk.png" alt="University of Gdańsk"></span></div>
+        <div class="researcher__name">Piotr Kowzan, PhD</div>
+        <div class="researcher__role" data-i18n="team.r2role">Assistant Professor · Institute of Education</div>
+        <div class="researcher__org" data-i18n="team.r2org">University of Gdańsk</div>
+        <a class="researcher__mail" href="mailto:piotr.kowzan@ug.edu.pl">piotr.kowzan@ug.edu.pl</a>
+      </div>
+      <div class="researcher">
+        <div class="researcher__photo"><img src="images/marek.jpg" alt="Marek Pawlak"><div class="researcher__ph">MP</div><span class="uni-badge"><img src="images/uni-jagiellonian.png" alt="Jagiellonian University"></span></div>
+        <div class="researcher__name">Marek Pawlak</div>
+        <div class="researcher__org" data-i18n="team.r6org">Jagiellonian University</div>
+        <a class="researcher__mail" href="mailto:marek.pawlak@uj.edu.pl">marek.pawlak@uj.edu.pl</a>
+      </div>
     </div>
   </div>
 </section>
 
 <section class="funder" aria-label="Funding">
   <div class="wrap funder__inner reveal">
-    <a class="funder__logo" href="https://www.rannis.is/" target="_blank" rel="noopener" aria-label="Rannís — Icelandic Centre for Research"><img src="images/rannis.png" alt="Rannís"></a>
+    <a class="funder__logo" href="https://www.rannis.is/" target="_blank" rel="noopener" aria-label="Rannís - Icelandic Centre for Research"><img src="images/rannis.png" alt="Rannís"></a>
     <div class="funder__credit">
       <span class="funder__label" data-i18n="footer.funded">Funded by</span>
       <span class="funder__fund">Rannsóknarsjóður Rannísar</span>
@@ -434,15 +420,14 @@
   <div class="wrap footer-inner">
     <div class="footer-top">
       <div>
-        <a href="#hero" class="logo logo--lg" aria-label="University of Iceland"><svg role="img"><use href="#hi-logo"/></svg></a>
-        <p class="footer__tag" data-i18n="footer.tag">Money and Migration — a research project on money, savings, and mobility between Poland and Iceland.</p>
+        <a href="#hero" class="logo logo--lg" aria-label="University of Iceland"><svg role="img" width="895" height="458"><use href="#hi-logo"/></svg></a>
+        <p class="footer__tag" data-i18n="footer.tag">Money and Migration - a research project on money, savings, and mobility between Poland and Iceland.</p>
       </div>
       <div>
         <h4 data-i18n="footer.exploreh">Explore</h4>
         <ul>
           <li><a href="#about" data-i18n="footer.about">About the project</a></li>
           <li><a href="#research" data-i18n="nav.research">Research</a></li>
-          <li><a href="#figures" data-i18n="nav.figures">Figures</a></li>
           <li><a href="#publications" data-i18n="nav.publications">Publications</a></li>
           <li><a href="#team" data-i18n="nav.researchers">Researchers</a></li>
         </ul>
@@ -458,22 +443,20 @@
 <script>
   const I18N = {
   en: {
-    "nav.about":"About","nav.research":"Research","nav.figures":"Figures","nav.publications":"Publications","nav.news":"News","nav.researchers":"Researchers",
+    "nav.about":"About","nav.research":"Research","nav.publications":"Publications","nav.news":"News","nav.researchers":"Researchers",
     "hero.eyebrow":"Research project · University of Iceland",
     "hero.title":"Money, savings, and mobility between Poland and Iceland",
     "hero.sub":"A study of how migration between countries reshapes how people understand money, save it, and give it meaning.",
     "hero.btn_about":"About the project","hero.btn_pubs":"Publications",
     "about.eyebrow":"About the project",
-    "about.lead":"The project asks a single question: <em>how do migration experiences shape the way people perceive and manage money?</em>",
-    "about.p1":"To answer it, the project examines attitudes toward money among the general populations of Iceland and Poland, Polish migrants living in Iceland, and second-generation Poles raised in Iceland. Comparing these groups makes it possible to trace how the meaning attached to money changes through migration.",
+    "about.lead":"The project focuses on two core questions:<ol class=\"about__questions\"><li>What are the key factors shaping perceptions and practices of money?</li><li>How do migration experiences influence perceptions and practices regarding money?</li></ol>",
+    "about.p1":"To answer these questions, the project examines attitudes toward money among the general populations of Iceland and Poland, Polish migrants living in Iceland, and second-generation Poles raised in Iceland. Comparing these groups makes it possible to trace how the meaning attached to money changes through migration.",
     "about.p2":"Combining quantitative surveys with qualitative interviews, a team of economists and anthropologists in both countries examines how money is embedded in social life: in families, savings and remittances, expectations and obligations. The aim is to understand not only how much people save, but also what money means to them and how that meaning changes as people, goods, ideas, and financial services move across borders.",
     "about.mk1":"Methods","about.mv1":"Quantitative and qualitative","about.mk2":"Disciplines","about.mv2":"Economics and anthropology","about.mk3":"Countries","about.mv3":"Iceland and Poland","about.mk4":"Status","about.mv4":"Fieldwork in progress",
-    "research.eyebrow":"Three populations, one question","research.h2":"The same question across the migration experience",
-    "research.s1t":"The general population","research.s1d":"Baseline attitudes toward money, saving, and financial security in Icelandic and Polish societies — the reference point against which the other two groups are compared.","research.s1g":"Iceland and Poland",
+    "research.eyebrow":"Three populations, two core questions","research.h2":"Exploring money across the migration experience",
+    "research.s1t":"Iceland and Poland","research.s1d":"Baseline attitudes toward money, saving, and financial security in Icelandic and Polish societies - the reference point against which the other two groups are compared.",
     "research.s2t":"Polish migrants in Iceland","research.s2d":"How the meaning of money and the way it is managed change for people who have moved from Poland to Iceland and navigate two financial cultures at once.","research.s2g":"First generation",
-    "research.s3t":"Second-generation Poles","research.s3d":"How second-generation Poles raised in Iceland understand, value, and talk about money — and which attitudes are carried forward from their parents.","research.s3g":"Second generation",
-    "figures.eyebrow":"The study in figures","figures.h2":"Scope of the fieldwork","figures.note":"Figures will be updated as fieldwork data become available.",
-    "figures.l1":"Survey respondents","figures.l2":"In-depth interviews","figures.l3":"Universities involved","figures.l4":"Months of fieldwork",
+    "research.s3t":"Second-generation Poles","research.s3d":"How second-generation Poles raised in Iceland understand, value, and talk about money - and which attitudes are carried forward from their parents.","research.s3g":"Second generation",
     "pubs.eyebrow":"Publications","pubs.h2":"Project outputs","pubs.lead":"Peer-reviewed articles, working papers, datasets, and conference presentations produced by the project will be listed here as they are published. Each entry will link to the full text or DOI.","pubs.note":"Publications will be added as they become available.",
     "pubs.year":"[Year]","pubs.title":"[Publication title goes here]","pubs.meta1":"[Authors] · [Journal or venue] · [Working paper / article / dataset]","pubs.meta2":"[Authors] · [Journal or venue] · [Type]",
     "news.eyebrow":"News & updates","news.h2":"From the project","news.lead":"Project milestones, fieldwork updates, talks, and events will be posted here.","news.note":"Updates will be added as the project progresses.",
@@ -488,26 +471,24 @@
     "team.r7role":"Professor · Faculty of Business Administration","team.r7org":"University of Iceland",
     "team.r8role":"Web designer · Student","team.r8org":"University of Iceland",
     "team.r9role":"Professor · Faculty of Sociology, Anthropology & Folkloristics","team.r9org":"University of Iceland",
-    "footer.tag":"Money and Migration — a research project on money, savings, and mobility between Poland and Iceland.",
+    "footer.tag":"Money and Migration - a research project on money, savings, and mobility between Poland and Iceland.",
     "footer.exploreh":"Explore","footer.contacth":"Contact","footer.about":"About the project","footer.funded":"Funded by","footer.copy":"© 2026 University of Iceland. All rights reserved."
   },
   is: {
-    "nav.about":"Um verkefnið","nav.research":"Rannsóknin","nav.figures":"Í tölum","nav.publications":"Útgáfur","nav.news":"Fréttir","nav.researchers":"Rannsakendur",
+    "nav.about":"Um verkefnið","nav.research":"Rannsóknin","nav.publications":"Útgáfur","nav.news":"Fréttir","nav.researchers":"Rannsakendur",
     "hero.eyebrow":"Rannsóknarverkefni · Háskóli Íslands",
     "hero.title":"Peningar, sparnaður og hreyfanleiki milli Póllands og Íslands",
     "hero.sub":"Rannsókn á því hvernig búferlaflutningar milli landa móta skilning fólks á peningum, sparnaðarhegðun þess og þá merkingu sem það leggur í peninga.",
     "hero.btn_about":"Um verkefnið","hero.btn_pubs":"Útgáfur",
     "about.eyebrow":"Um verkefnið",
-    "about.lead":"Verkefnið leitast við að svara einni spurningu: <em>hvernig mótar reynsla af búferlaflutningum viðhorf fólks til peninga og hvernig það fer með þá?</em>",
-    "about.p1":"Til að svara þessari spurningu rannsakar verkefnið viðhorf til peninga meðal almennings á Íslandi og í Póllandi, pólskra innflytjenda á Íslandi og Pólverja af annarri kynslóð sem hafa alist upp á Íslandi. Samanburður þessara hópa gerir kleift að kanna hvernig viðhorf til peninga og merking þeirra breytast í tengslum við búferlaflutninga.",
+    "about.lead":"Verkefnið beinir sjónum að tveimur meginspurningum:<ol class=\"about__questions\"><li>Hverjir eru helstu þættir sem móta viðhorf og venjur fólks til peninga?</li><li>Hvernig hefur reynsla af búferlaflutningum áhrif á viðhorf og venjur varðandi peninga?</li></ol>",
+    "about.p1":"Til að svara þessum spurningum rannsakar verkefnið viðhorf til peninga meðal almennings á Íslandi og í Póllandi, pólskra innflytjenda á Íslandi og Pólverja af annarri kynslóð sem hafa alist upp á Íslandi. Samanburður þessara hópa gerir kleift að kanna hvernig viðhorf til peninga og merking þeirra breytast í tengslum við búferlaflutninga.",
     "about.p2":"Með því að sameina megindlegar kannanir og eigindleg viðtöl rannsakar hópur hagfræðinga og mannfræðinga í báðum löndum hvernig peningar eru samofnir félagslegu lífi: fjölskyldum, sparnaði og peningasendingum, væntingum og skyldum. Markmiðið er ekki aðeins að skilja hversu mikið fólk sparar, heldur einnig hvaða merkingu það leggur í peninga og hvernig sú merking breytist þegar fólk, vörur, hugmyndir og fjármálaþjónusta færast yfir landamæri.",
     "about.mk1":"Aðferðir","about.mv1":"Megindlegar og eigindlegar","about.mk2":"Fræðigreinar","about.mv2":"Hagfræði og mannfræði","about.mk3":"Lönd","about.mv3":"Ísland og Pólland","about.mk4":"Staða","about.mv4":"Gagnaöflun stendur yfir",
-    "research.eyebrow":"Þrír hópar, ein spurning","research.h2":"Sama spurningin skoðuð í samhengi við búferlaflutninga",
-    "research.s1t":"Almenningur","research.s1d":"Grunnviðhorf til peninga, sparnaðar og fjárhagslegs öryggis í íslenskum og pólskum samfélögum — viðmiðið sem hinir tveir hóparnir eru bornir saman við.","research.s1g":"Ísland og Pólland",
+    "research.eyebrow":"Þrír hópar, tvær meginspurningar","research.h2":"Peningar skoðaðir í samhengi við búferlaflutninga",
+    "research.s1t":"Ísland og Pólland","research.s1d":"Grunnviðhorf til peninga, sparnaðar og fjárhagslegs öryggis í íslenskum og pólskum samfélögum - viðmiðið sem hinir tveir hóparnir eru bornir saman við.",
     "research.s2t":"Pólskir innflytjendur á Íslandi","research.s2d":"Hvernig merking peninga og meðferð þeirra breytast hjá fólki sem hefur flust frá Póllandi til Íslands og þarf að fóta sig í tveimur fjármálamenningum í senn.","research.s2g":"Fyrsta kynslóð",
-    "research.s3t":"Pólverjar af annarri kynslóð","research.s3d":"Hvernig Pólverjar af annarri kynslóð, sem alist hafa upp á Íslandi, skilja peninga, meta þá og tala um þá — og hvaða viðhorf þeir taka með sér frá foreldrum sínum.","research.s3g":"Önnur kynslóð",
-    "figures.eyebrow":"Rannsóknin í tölum","figures.h2":"Umfang gagnaöflunar","figures.note":"Tölurnar verða uppfærðar eftir því sem gögn úr rannsókninni liggja fyrir.",
-    "figures.l1":"Svarendur í könnun","figures.l2":"Djúpviðtöl","figures.l3":"Háskólar sem koma að verkefninu","figures.l4":"Mánuðir gagnaöflunar",
+    "research.s3t":"Pólverjar af annarri kynslóð","research.s3d":"Hvernig Pólverjar af annarri kynslóð, sem alist hafa upp á Íslandi, skilja peninga, meta þá og tala um þá - og hvaða viðhorf þeir taka með sér frá foreldrum sínum.","research.s3g":"Önnur kynslóð",
     "pubs.eyebrow":"Útgáfur","pubs.h2":"Útgáfur verkefnisins","pubs.lead":"Ritrýndar greinar, vinnuskjöl, gagnasöfn og ráðstefnuerindi sem verða til innan verkefnisins verða birt hér eftir því sem þau koma út. Hver færsla mun innihalda tengil á heildartexta eða DOI.","pubs.note":"Útgáfum verður bætt við eftir því sem þær birtast.",
     "pubs.year":"[Ár]","pubs.title":"[Titill útgáfu kemur hér]","pubs.meta1":"[Höfundar] · [Tímarit eða vettvangur] · [Vinnuskjal / grein / gagnasafn]","pubs.meta2":"[Höfundar] · [Tímarit eða vettvangur] · [Tegund]",
     "news.eyebrow":"Fréttir og uppfærslur","news.h2":"Frá verkefninu","news.lead":"Áfangar verkefnisins, fréttir af gagnaöflun, erindi og viðburðir verða birt hér.","news.note":"Uppfærslum verður bætt við eftir því sem verkefninu vindur fram.",
@@ -522,26 +503,24 @@
     "team.r7role":"Prófessor · Viðskiptafræðideild","team.r7org":"Háskóli Íslands",
     "team.r8role":"Vefsíðuhönnuður · Nemandi","team.r8org":"Háskóli Íslands",
     "team.r9role":"Prófessor · Félagsfræði-, mannfræði- og þjóðfræðideild","team.r9org":"Háskóli Íslands",
-    "footer.tag":"Money and Migration — rannsóknarverkefni um peninga, sparnað og hreyfanleika milli Póllands og Íslands.",
+    "footer.tag":"Money and Migration - rannsóknarverkefni um peninga, sparnað og hreyfanleika milli Póllands og Íslands.",
     "footer.exploreh":"Yfirlit","footer.contacth":"Hafa samband","footer.about":"Um verkefnið","footer.funded":"Styrkt af","footer.copy":"© 2026 Háskóli Íslands. Allur réttur áskilinn."
   },
   pl: {
-    "nav.about":"O projekcie","nav.research":"Badania","nav.figures":"W liczbach","nav.publications":"Publikacje","nav.news":"Aktualności","nav.researchers":"Zespół badawczy",
+    "nav.about":"O projekcie","nav.research":"Badania","nav.publications":"Publikacje","nav.news":"Aktualności","nav.researchers":"Zespół badawczy",
     "hero.eyebrow":"Projekt badawczy · Uniwersytet Islandzki",
     "hero.title":"Pieniądze, oszczędności i mobilność między Polską a Islandią",
     "hero.sub":"Badanie tego, jak migracja między krajami wpływa na sposób, w jaki ludzie rozumieją pieniądze, oszczędzają i jakie nadają im znaczenie.",
     "hero.btn_about":"O projekcie","hero.btn_pubs":"Publikacje",
     "about.eyebrow":"O projekcie",
-    "about.lead":"Projekt koncentruje się na jednym pytaniu: <em>w jaki sposób doświadczenie migracji wpływa na to, jak ludzie postrzegają pieniądze i nimi gospodarują?</em>",
-    "about.p1":"Aby na nie odpowiedzieć, projekt analizuje postawy wobec pieniędzy wśród ogółu mieszkańców Islandii i Polski, polskich migrantów mieszkających w Islandii oraz Polaków drugiego pokolenia wychowanych w Islandii. Porównanie tych grup pozwala prześledzić, jak w kontekście migracji zmieniają się znaczenia przypisywane pieniądzom.",
+    "about.lead":"Projekt koncentruje się na dwóch głównych pytaniach:<ol class=\"about__questions\"><li>Jakie są kluczowe czynniki kształtujące postrzeganie pieniędzy i sposoby obchodzenia się z nimi?</li><li>W jaki sposób doświadczenie migracji wpływa na postrzeganie pieniędzy i sposoby obchodzenia się z nimi?</li></ol>",
+    "about.p1":"Aby odpowiedzieć na te pytania, projekt analizuje postawy wobec pieniędzy wśród ogółu mieszkańców Islandii i Polski, polskich migrantów mieszkających w Islandii oraz Polaków drugiego pokolenia wychowanych w Islandii. Porównanie tych grup pozwala prześledzić, jak w kontekście migracji zmieniają się znaczenia przypisywane pieniądzom.",
     "about.p2":"Łącząc badania ankietowe o charakterze ilościowym z wywiadami jakościowymi, zespół ekonomistów i antropologów z obu krajów bada, w jaki sposób pieniądze są osadzone w życiu społecznym: w relacjach rodzinnych, oszczędzaniu i przekazach pieniężnych, oczekiwaniach i zobowiązaniach. Celem jest zrozumienie nie tylko tego, ile ludzie oszczędzają, lecz także tego, co znaczą dla nich pieniądze i jak to znaczenie zmienia się, gdy ludzie, towary, idee i usługi finansowe przekraczają granice.",
     "about.mk1":"Metody","about.mv1":"Ilościowe i jakościowe","about.mk2":"Dyscypliny naukowe","about.mv2":"Ekonomia i antropologia","about.mk3":"Kraje","about.mv3":"Islandia i Polska","about.mk4":"Status","about.mv4":"Badania terenowe w toku",
-    "research.eyebrow":"Trzy grupy, jedno pytanie","research.h2":"To samo pytanie w kontekście migracji",
-    "research.s1t":"Ogół społeczeństwa","research.s1d":"Podstawowe postawy wobec pieniędzy, oszczędzania i bezpieczeństwa finansowego w społeczeństwach Islandii i Polski — punkt odniesienia dla dwóch pozostałych grup.","research.s1g":"Islandia i Polska",
+    "research.eyebrow":"Trzy grupy, dwa główne pytania","research.h2":"Pieniądze w kontekście migracji",
+    "research.s1t":"Islandia i Polska","research.s1d":"Podstawowe postawy wobec pieniędzy, oszczędzania i bezpieczeństwa finansowego w społeczeństwach Islandii i Polski - punkt odniesienia dla dwóch pozostałych grup.",
     "research.s2t":"Polscy migranci w Islandii","research.s2d":"Jak u osób, które przeprowadziły się z Polski do Islandii i funkcjonują jednocześnie w dwóch kulturach finansowych, zmieniają się znaczenie pieniędzy i sposób gospodarowania nimi.","research.s2g":"Pierwsze pokolenie",
     "research.s3t":"Polacy drugiego pokolenia","research.s3d":"Jak Polacy drugiego pokolenia, wychowani w Islandii, rozumieją i wartościują pieniądze, jak o nich mówią oraz jakie postawy przejmują od swoich rodziców.","research.s3g":"Drugie pokolenie",
-    "figures.eyebrow":"Badanie w liczbach","figures.h2":"Zakres badań terenowych","figures.note":"Dane zostaną uzupełnione w miarę postępów badań terenowych.",
-    "figures.l1":"Uczestnicy ankiety","figures.l2":"Wywiady pogłębione","figures.l3":"Zaangażowane uniwersytety","figures.l4":"Miesiące badań terenowych",
     "pubs.eyebrow":"Publikacje","pubs.h2":"Rezultaty projektu","pubs.lead":"Recenzowane artykuły naukowe, opracowania robocze, zbiory danych i wystąpienia konferencyjne powstałe w ramach projektu będą zamieszczane tutaj w miarę ich publikacji. Każda pozycja będzie zawierała link do pełnego tekstu lub identyfikatora DOI.","pubs.note":"Publikacje będą dodawane w miarę ich ukazywania się.",
     "pubs.year":"[Rok]","pubs.title":"[Tytuł publikacji]","pubs.meta1":"[Autorzy] · [Czasopismo / konferencja / wydawca] · [Opracowanie robocze / artykuł / zbiór danych]","pubs.meta2":"[Autorzy] · [Czasopismo / konferencja / wydawca] · [Typ]",
     "news.eyebrow":"Aktualności","news.h2":"Aktualności z projektu","news.lead":"Informacje o najważniejszych etapach projektu, postępach badań terenowych, wystąpieniach i wydarzeniach będą publikowane tutaj.","news.note":"Aktualności będą dodawane w miarę postępów projektu.",
@@ -556,7 +535,7 @@
     "team.r7role":"Profesor · Wydział Zarządzania","team.r7org":"Uniwersytet Islandzki",
     "team.r8role":"Projektant stron internetowych · Student","team.r8org":"Uniwersytet Islandzki",
     "team.r9role":"Profesor · Wydział Socjologii, Antropologii i Folklorystyki","team.r9org":"Uniwersytet Islandzki",
-    "footer.tag":"Money and Migration — projekt badawczy poświęcony pieniądzom, oszczędnościom i mobilności między Polską a Islandią.",
+    "footer.tag":"Money and Migration - projekt badawczy poświęcony pieniądzom, oszczędnościom i mobilności między Polską a Islandią.",
     "footer.exploreh":"Nawigacja","footer.contacth":"Kontakt","footer.about":"O projekcie","footer.funded":"Finansowane przez","footer.copy":"© 2026 Uniwersytet Islandzki. Wszelkie prawa zastrzeżone."
   }
 };
