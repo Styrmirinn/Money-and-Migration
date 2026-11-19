@@ -141,6 +141,12 @@
   .news-feature .news-item__title{font-size:clamp(1.5rem,2.6vw,1.9rem);color:var(--ink);margin-bottom:.8rem;}
   .news-item__body p{font-size:1.02rem;color:var(--ink-2);}
   .news-item__body p + p{margin-top:.9rem;}
+  .news-feature--logo .news-feature__fig{max-width:340px;margin:0 0 1.6rem;}
+  .news-feature--logo .news-feature__fig .logo-slot{display:flex;align-items:center;justify-content:center;aspect-ratio:16/9;background:#fff;border:1px dashed var(--line);border-radius:2px;color:var(--ink-2);font-family:var(--mono);font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;text-align:center;padding:1rem;}
+  .news-feature--logo .news-feature__fig img{aspect-ratio:auto;object-fit:contain;background:#fff;padding:.5rem;}
+  .news-feature + .news-feature{margin-top:3rem;}
+  .news-link{display:inline-block;margin-top:1.1rem;font-family:var(--mono);font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;color:var(--blue);text-decoration:none;border-bottom:1px solid var(--blue);padding-bottom:2px;}
+  .news-link:hover{opacity:.75;}
   .news-item__sum{font-size:.98rem;color:var(--ink-2);}
 
   /* researchers */
@@ -327,6 +333,19 @@
       <h2 data-i18n="news.h2">From the project</h2>
     </div>
     <div class="news-list reveal">
+      <article class="news-feature news-feature--logo">
+        <figure class="news-feature__fig"><img src="images/wau-lisboa27.png" alt="WAU Lisboa 2027 - Life Imagined"></figure>
+        <div class="news-item">
+          <div class="news-item__date" data-i18n="news2.date">19 November 2026</div>
+          <div class="news-item__body">
+            <h3 class="news-item__title" data-i18n="news2.title">Paper submissions open for our WAU Congress panel</h3>
+            <p data-i18n="news2.p1">We are thrilled that our panel proposal for the World Anthropological Union Congress, to be held in Lisboa, Portugal from 31st August to 4th September 2027, has been accepted.</p>
+            <p data-i18n="news2.p2">Our panel is called <em>Money and migration: savings obligations and changing values</em>. In the panel we aim to explore how saving, spending and borrowing change with migration by examining how currencies, obligations and identities shape financial practices across places and over time.</p>
+            <p data-i18n="news2.p3">Paper submissions for the panel are now open. Hope to see you there!</p>
+            <a class="news-link" data-i18n="news2.link" href="https://www.waucongress2027.org/programme/#21185" target="_blank" rel="noopener">Propose a paper &rarr;</a>
+          </div>
+        </div>
+      </article>
       <article class="news-feature">
         <figure class="news-feature__fig"><img src="images/news-meeting.jpg" alt="The project team on the terrace of the Nordic House in Reykjavík"></figure>
         <div class="news-item">
@@ -485,6 +504,7 @@
     "pubs.year":"[Year]","pubs.title":"[Publication title goes here]","pubs.meta1":"[Authors] · [Journal or venue] · [Working paper / article / dataset]","pubs.meta2":"[Authors] · [Journal or venue] · [Type]",
     "news.eyebrow":"News & updates","news.h2":"From the project",
     "news.date":"29 September 2026","news.title":"Project team meets in Reykjavík","news.p1":"On 28th-29th September the project team had a two day work-meeting in Reykjavík. This was concluded with an open event at the Nordic House on 29th September, introducing the project to the public.","news.p2":"The meeting was fruitful as the project team shared the data that has been collected by different team members and started the discussion on analysis and writing.","news.p3":"Our next steps will be participation by Már Wolfgang Mixa, Anna Maria Wojtynska and Guðrún Sif Friðriksdóttir at Þjóðarspegillinn, the Annual Conference of Social Sciences at the University of Iceland. We look forward to continuing the work and meeting again in Poznan, Poland in spring/summer 2027.",
+    "news2.date":"19 November 2026","news2.title":"Paper submissions open for our WAU Congress panel","news2.p1":"We are thrilled that our panel proposal for the World Anthropological Union Congress, to be held in Lisboa, Portugal from 31st August to 4th September 2027, has been accepted.","news2.p2":"Our panel is called <em>Money and migration: savings obligations and changing values</em>. In the panel we aim to explore how saving, spending and borrowing change with migration by examining how currencies, obligations and identities shape financial practices across places and over time.","news2.p3":"Paper submissions for the panel are now open. Hope to see you there!","news2.link":"Propose a paper &rarr;",
     "team.eyebrow":"Researchers","team.h2":"The team behind the project",
     "team.r1role":"Researcher · School of Social Sciences","team.r1org":"University of Iceland",
     "team.r2role":"Assistant Professor · Institute of Education","team.r2org":"University of Gdańsk",
@@ -518,6 +538,7 @@
     "pubs.year":"[Ár]","pubs.title":"[Titill útgáfu kemur hér]","pubs.meta1":"[Höfundar] · [Tímarit eða vettvangur] · [Vinnuskjal / grein / gagnasafn]","pubs.meta2":"[Höfundar] · [Tímarit eða vettvangur] · [Tegund]",
     "news.eyebrow":"Fréttir og uppfærslur","news.h2":"Frá verkefninu",
     "news.date":"29. september 2026","news.title":"Verkefnisteymið hittist í Reykjavík","news.p1":"Dagana 28.-29. september hélt verkefnisteymið tveggja daga vinnufund í Reykjavík. Fundinum lauk með opnum viðburði í Norræna húsinu 29. september þar sem verkefnið var kynnt fyrir almenningi.","news.p2":"Fundurinn var árangursríkur: teymið deildi gögnum sem einstakir liðsmenn hafa safnað og hóf umræðu um greiningu og skrif.","news.p3":"Næstu skref eru þátttaka Más Wolfgangs Mixa, Önnu Mariu Wojtynska og Guðrúnar Sifjar Friðriksdóttur á Þjóðarspeglinum, árlegri ráðstefnu í félagsvísindum við Háskóla Íslands. Við hlökkum til að halda vinnunni áfram og hittast aftur í Poznań í Póllandi vorið/sumarið 2027.",
+    "news2.date":"19. nóvember 2026","news2.title":"Opið fyrir innsendingu erinda á málstofu okkar á WAU-þinginu","news2.p1":"Við erum afar ánægð með að tillaga okkar að málstofu á þingi Alþjóðasambands mannfræðinga (World Anthropological Union Congress), sem haldið verður í Lissabon í Portúgal 31. ágúst til 4. september 2027, hefur verið samþykkt.","news2.p2":"Málstofan heitir <em>Money and migration: savings obligations and changing values</em>. Þar viljum við kanna hvernig sparnaður, eyðsla og lántökur breytast við flutning milli landa, með því að skoða hvernig gjaldmiðlar, skuldbindingar og sjálfsmynd móta fjármálahegðun milli staða og yfir tíma.","news2.p3":"Nú er opið fyrir innsendingu erinda á málstofuna. Vonumst til að sjá ykkur þar!","news2.link":"Senda inn erindi &rarr;",
     "team.eyebrow":"Rannsakendur","team.h2":"Rannsóknarteymið",
     "team.r1role":"Rannsakandi · Félagsvísindasvið","team.r1org":"Háskóli Íslands",
     "team.r2role":"Aðjúnkt · Menntavísindastofnun","team.r2org":"Háskólinn í Gdańsk",
@@ -551,6 +572,7 @@
     "pubs.year":"[Rok]","pubs.title":"[Tytuł publikacji]","pubs.meta1":"[Autorzy] · [Czasopismo / konferencja / wydawca] · [Opracowanie robocze / artykuł / zbiór danych]","pubs.meta2":"[Autorzy] · [Czasopismo / konferencja / wydawca] · [Typ]",
     "news.eyebrow":"Aktualności","news.h2":"Aktualności z projektu",
     "news.date":"29 września 2026","news.title":"Zespół projektu spotkał się w Reykjavíku","news.p1":"W dniach 28-29 września zespół projektu odbył dwudniowe spotkanie robocze w Reykjavíku. Zakończyło się ono otwartym wydarzeniem w Domu Nordyckim (Norræna húsið) 29 września, podczas którego projekt został przedstawiony publiczności.","news.p2":"Spotkanie było owocne: członkowie zespołu podzielili się zebranymi danymi i rozpoczęli dyskusję o analizie oraz pisaniu.","news.p3":"Następnym krokiem będzie udział Mára Wolfganga Mixy, Anny Marii Wojtyńskiej i Guðrún Sif Friðriksdóttir w Þjóðarspegillinn, corocznej konferencji nauk społecznych na Uniwersytecie Islandzkim. Czekamy na dalszą pracę i kolejne spotkanie w Poznaniu wiosną/latem 2027.",
+    "news2.date":"19 listopada 2026","news2.title":"Zgłoszenia referatów do naszego panelu na kongresie WAU są otwarte","news2.p1":"Z radością informujemy, że nasza propozycja panelu na Kongres Światowej Unii Antropologicznej (World Anthropological Union Congress), który odbędzie się w Lizbonie w Portugalii w dniach 31 sierpnia - 4 września 2027 r., została przyjęta.","news2.p2":"Nasz panel nosi tytuł <em>Money and migration: savings obligations and changing values</em>. Chcemy w nim zbadać, jak oszczędzanie, wydawanie i zaciąganie pożyczek zmieniają się wraz z migracją, analizując, jak waluty, zobowiązania i tożsamości kształtują praktyki finansowe w różnych miejscach i w czasie.","news2.p3":"Zgłoszenia referatów do panelu są już otwarte. Mamy nadzieję zobaczyć Was tam!","news2.link":"Zgłoś referat &rarr;",
     "team.eyebrow":"Zespół badawczy","team.h2":"Zespół projektu",
     "team.r1role":"Badaczka · Wydział Nauk Społecznych","team.r1org":"Uniwersytet Islandzki",
     "team.r2role":"Adiunkt · Instytut Pedagogiki","team.r2org":"Uniwersytet Gdański",
